@@ -1,0 +1,42 @@
+{
+  "name": "com.nelson.power",
+  "displayName": "NelsonInventory",
+  "version": "1.0.0",
+  "description": "AppD",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "cordova-android": "^10.1.2",
+    "cordova-plugin-certificates": "^0.6.4",
+    "cordova-plugin-device": "^2.1.0",
+    "cordova-plugin-dialogs": "^2.0.2",
+    "cordova-plugin-inappbrowser": "^5.0.0",
+    "cordova-plugin-network-information": "^3.0.0"
+  },
+  "cordova": {
+    "platforms": [
+      "android"
+    ],
+    "plugins": {
+      "appd-plugin-eum-mobile": {
+        "APP_KEY": "AD-AAB-ACC-JYN",
+        "COLLECTOR_URL": "https://col.eum-appdynamics.com"
+      },
+      "cordova-plugin-inappbrowser": {},
+      "cordova-plugin-dialogs": {},
+      "cordova-plugin-network-information": {},
+      "cordova-plugin-certificates": {},
+      "cordova-plugin-device": {}
+    }
+  },
+  "dependencies": {
+    "appd-plugin-eum-mobile": "21.5.0"
+  }
+}
